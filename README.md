@@ -20,10 +20,10 @@ The input should be a `.fasta` file containing peptide sequences. Each sequence 
 Example:
 
 ```
->Peptide_1
-ACDEFGHIKLMNPQRSTVWY
->Peptide_2
-ACDDEFGHIKLMNPQRSTVWY
+>Homo_sapiens|Insulin_B_chain|INS_HUMAN|30aa
+FVNQHLCGSHLVEALYLVCGERGFFYTPKT
+>Homo_sapiens|Glucagon|GCG_HUMAN|29aa
+HSQGTFTSDYSKYLDSRRAQDFVQWLMNT
 ```
 
 ---
@@ -42,16 +42,16 @@ The output is a `.csv` file containing the calculated descriptors for each pepti
 
 Example:
 
-| ID         | Sequence               | length_peptide | boman_index_peptides | hydrophobicity_index_peptides | ... |
-|------------|------------------------|----------------|-----------------------|-------------------------------|-----|
-| Peptide_1  | ACDEFGHIKLMNPQRSTVWY   | 20             | 0.45                  | -0.12                         | ... |
-| Peptide_2  | ACDDEFGHIKLMNPQRSTVWY  | 21             | 0.50                  | -0.10                         | ... |
+| ID                                   | Sequence                              | length_peptide | boman_index_peptides | hydrophobicity_index_peptides |
+|-------------------------------------|--------------------------------------|----------------|-----------------------|-------------------------------|
+| Homo_sapiens|Insulin_B_chain|INS_HUMAN|30aa | FVNQHLCGSHLVEALYLVCGERGFFYTPKT       | 30             | 0.549                | 0.22                          |
+| Homo_sapiens|Glucagon|GCG_HUMAN|29aa         | HSQGTFTSDYSKYLDSRRAQDFVQWLMNT        | 29             | 2.889                | -0.99                         |
 
 ---
 
 ## ▶️ Launch in Google Colab
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-repo/peptides_descriptors_calculator/blob/main/descriptors_calculator.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/verasand/peptides_descriptors_calculator/blob/main/descriptors_calculator.ipynb)
 
 ---
 
