@@ -42,10 +42,13 @@ The output is a `.csv` file containing the calculated descriptors for each pepti
 
 Example:
 
-| ID                                   | Sequence                              | length_peptide | boman_index_peptides | hydrophobic_moment_peptides | hydrophobicity_index_peptides | charge_peptides | molecular_weight_peptides |
-|-------------------------------------|----------------------------------------|----------------|-----------------------|-----------------------------|-------------------------------|-----------------|---------------------------|
-| Homo_sapiens\|Insulin_B_chain\|INS_HUMAN\|30aa | FVNQHLCGSHLVEALYLVCGERGFFYTPKT       | 30             | 0.549                | 0.491                       | 0.22                          | 0.057           | 3429.96                   |
-| Homo_sapiens\|Glucagon\|GCG_HUMAN\|29aa       | HSQGTFTSDYSKYLDSRRAQDFVQWLMNT        | 29             | 2.889                | 0.843                       | -0.99                         | 0.088           | 3482.79                   |
+| ID                                   | Sequence                              | length_peptide | boman_index_peptides | ... |
+|-------------------------------------|----------------------------------------|----------------|-----------------------|-----|
+| Homo_sapiens\|Insulin_B_chain\|INS_HUMAN\|30aa | FVNQHLCGSHLVEALYLVCGERGFFYTPKT       | 30             | 0.549                | ... |
+| Homo_sapiens\|Glucagon\|GCG_HUMAN\|29aa       | HSQGTFTSDYSKYLDSRRAQDFVQWLMNT        | 29             | 2.889                | ... |
+
+*Note: Only a subset of the columns is shown. The full CSV includes additional descriptors such as charge and molecular weight.*
+
 
 
 ---
